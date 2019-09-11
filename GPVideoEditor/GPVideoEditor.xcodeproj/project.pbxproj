@@ -14,6 +14,10 @@
 		45E717E423293078007467BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E717E223293078007467BB /* LaunchScreen.storyboard */; };
 		45E717EF23293079007467BB /* GPVideoEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717EE23293079007467BB /* GPVideoEditorTests.swift */; };
 		45E717FA23293079007467BB /* GPVideoEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717F923293079007467BB /* GPVideoEditorUITests.swift */; };
+		45E7181123293959007467BB /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7181023293959007467BB /* AssetsViewController.swift */; };
+		45E718132329397F007467BB /* GPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E718122329397F007467BB /* GPViewController.swift */; };
+		45E7181823293A60007467BB /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7181723293A60007467BB /* BaseViewModel.swift */; };
+		45E7181B23293AD4007467BB /* AssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7181A23293AD4007467BB /* AssetsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		45E717F523293079007467BB /* GPVideoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPVideoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E717F923293079007467BB /* GPVideoEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPVideoEditorUITests.swift; sourceTree = "<group>"; };
 		45E717FB23293079007467BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E7181023293959007467BB /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
+		45E718122329397F007467BB /* GPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPViewController.swift; sourceTree = "<group>"; };
+		45E7181723293A60007467BB /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		45E7181A23293AD4007467BB /* AssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,8 @@
 		45E7180923293840007467BB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				45E7181623293A54007467BB /* Base */,
+				45E7181923293A88007467BB /* Assets */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -152,6 +162,8 @@
 		45E7180A23293853007467BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45E718152329399C007467BB /* Assets */,
+				45E7181423293983007467BB /* Base */,
 				45E7180D2329387B007467BB /* Storyboards */,
 			);
 			path = View;
@@ -195,6 +207,38 @@
 				45E717E523293078007467BB /* Info.plist */,
 			);
 			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+		45E7181423293983007467BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				45E718122329397F007467BB /* GPViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		45E718152329399C007467BB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				45E7181023293959007467BB /* AssetsViewController.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		45E7181623293A54007467BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				45E7181723293A60007467BB /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		45E7181923293A88007467BB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				45E7181A23293AD4007467BB /* AssetsViewModel.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +373,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E717DF23293077007467BB /* GPVideoEditor.xcdatamodeld in Sources */,
+				45E7181823293A60007467BB /* BaseViewModel.swift in Sources */,
 				45E717D723293077007467BB /* AppDelegate.swift in Sources */,
+				45E7181B23293AD4007467BB /* AssetsViewModel.swift in Sources */,
+				45E7181123293959007467BB /* AssetsViewController.swift in Sources */,
+				45E718132329397F007467BB /* GPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +554,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29WJG67KYT;
-				INFOPLIST_FILE = GPVideoEditor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GPVideoEditor/InfoPlist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -524,7 +573,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29WJG67KYT;
-				INFOPLIST_FILE = GPVideoEditor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GPVideoEditor/InfoPlist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,7 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
