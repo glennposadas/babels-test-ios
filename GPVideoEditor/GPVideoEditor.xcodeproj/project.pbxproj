@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45E717D723293077007467BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717D623293077007467BB /* AppDelegate.swift */; };
+		45E717DC23293077007467BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E717DA23293077007467BB /* Main.storyboard */; };
+		45E717DF23293077007467BB /* GPVideoEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45E717DD23293077007467BB /* GPVideoEditor.xcdatamodeld */; };
+		45E717E123293078007467BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E717E023293078007467BB /* Assets.xcassets */; };
+		45E717E423293078007467BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E717E223293078007467BB /* LaunchScreen.storyboard */; };
+		45E717EF23293079007467BB /* GPVideoEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717EE23293079007467BB /* GPVideoEditorTests.swift */; };
+		45E717FA23293079007467BB /* GPVideoEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717F923293079007467BB /* GPVideoEditorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45E717EB23293079007467BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E717CB23293077007467BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E717D223293077007467BB;
+			remoteInfo = GPVideoEditor;
+		};
+		45E717F623293079007467BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E717CB23293077007467BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E717D223293077007467BB;
+			remoteInfo = GPVideoEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45E717D323293077007467BB /* GPVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E717D623293077007467BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45E717DB23293077007467BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45E717DE23293077007467BB /* GPVideoEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPVideoEditor.xcdatamodel; sourceTree = "<group>"; };
+		45E717E023293078007467BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45E717E323293078007467BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45E717E523293078007467BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E717EA23293079007467BB /* GPVideoEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPVideoEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E717EE23293079007467BB /* GPVideoEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPVideoEditorTests.swift; sourceTree = "<group>"; };
+		45E717F023293079007467BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E717F523293079007467BB /* GPVideoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPVideoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E717F923293079007467BB /* GPVideoEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPVideoEditorUITests.swift; sourceTree = "<group>"; };
+		45E717FB23293079007467BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45E717D023293077007467BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717E723293079007467BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717F223293079007467BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45E717CA23293077007467BB = {
+			isa = PBXGroup;
+			children = (
+				45E717D523293077007467BB /* GPVideoEditor */,
+				45E717ED23293079007467BB /* GPVideoEditorTests */,
+				45E717F823293079007467BB /* GPVideoEditorUITests */,
+				45E717D423293077007467BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45E717D423293077007467BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45E717D323293077007467BB /* GPVideoEditor.app */,
+				45E717EA23293079007467BB /* GPVideoEditorTests.xctest */,
+				45E717F523293079007467BB /* GPVideoEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E717D523293077007467BB /* GPVideoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				45E718082329383A007467BB /* Networking */,
+				45E7180723293834007467BB /* Model */,
+				45E7180A23293853007467BB /* View */,
+				45E7180923293840007467BB /* ViewModel */,
+				45E7180C2329386E007467BB /* App */,
+				45E7180E23293883007467BB /* Resources */,
+				45E7180F2329388F007467BB /* InfoPlist */,
+				45E7180B23293864007467BB /* Utilities */,
+			);
+			path = GPVideoEditor;
+			sourceTree = "<group>";
+		};
+		45E717ED23293079007467BB /* GPVideoEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				45E717EE23293079007467BB /* GPVideoEditorTests.swift */,
+				45E717F023293079007467BB /* Info.plist */,
+			);
+			path = GPVideoEditorTests;
+			sourceTree = "<group>";
+		};
+		45E717F823293079007467BB /* GPVideoEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45E717F923293079007467BB /* GPVideoEditorUITests.swift */,
+				45E717FB23293079007467BB /* Info.plist */,
+			);
+			path = GPVideoEditorUITests;
+			sourceTree = "<group>";
+		};
+		45E7180723293834007467BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45E717DD23293077007467BB /* GPVideoEditor.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45E718082329383A007467BB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		45E7180923293840007467BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45E7180A23293853007467BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45E7180D2329387B007467BB /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45E7180B23293864007467BB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		45E7180C2329386E007467BB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				45E717D623293077007467BB /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		45E7180D2329387B007467BB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45E717DA23293077007467BB /* Main.storyboard */,
+				45E717E223293078007467BB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		45E7180E23293883007467BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45E717E023293078007467BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45E7180F2329388F007467BB /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				45E717E523293078007467BB /* Info.plist */,
+			);
+			path = InfoPlist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45E717D223293077007467BB /* GPVideoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E717FE23293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditor" */;
+			buildPhases = (
+				45E717CF23293077007467BB /* Sources */,
+				45E717D023293077007467BB /* Frameworks */,
+				45E717D123293077007467BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPVideoEditor;
+			productName = GPVideoEditor;
+			productReference = 45E717D323293077007467BB /* GPVideoEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45E717E923293079007467BB /* GPVideoEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E7180123293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditorTests" */;
+			buildPhases = (
+				45E717E623293079007467BB /* Sources */,
+				45E717E723293079007467BB /* Frameworks */,
+				45E717E823293079007467BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E717EC23293079007467BB /* PBXTargetDependency */,
+			);
+			name = GPVideoEditorTests;
+			productName = GPVideoEditorTests;
+			productReference = 45E717EA23293079007467BB /* GPVideoEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45E717F423293079007467BB /* GPVideoEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E7180423293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditorUITests" */;
+			buildPhases = (
+				45E717F123293079007467BB /* Sources */,
+				45E717F223293079007467BB /* Frameworks */,
+				45E717F323293079007467BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E717F723293079007467BB /* PBXTargetDependency */,
+			);
+			name = GPVideoEditorUITests;
+			productName = GPVideoEditorUITests;
+			productReference = 45E717F523293079007467BB /* GPVideoEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45E717CB23293077007467BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Glenn Posadas";
+				TargetAttributes = {
+					45E717D223293077007467BB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					45E717E923293079007467BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 45E717D223293077007467BB;
+					};
+					45E717F423293079007467BB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 45E717D223293077007467BB;
+					};
+				};
+			};
+			buildConfigurationList = 45E717CE23293077007467BB /* Build configuration list for PBXProject "GPVideoEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45E717CA23293077007467BB;
+			productRefGroup = 45E717D423293077007467BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45E717D223293077007467BB /* GPVideoEditor */,
+				45E717E923293079007467BB /* GPVideoEditorTests */,
+				45E717F423293079007467BB /* GPVideoEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E717D123293077007467BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E717E423293078007467BB /* LaunchScreen.storyboard in Resources */,
+				45E717E123293078007467BB /* Assets.xcassets in Resources */,
+				45E717DC23293077007467BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717E823293079007467BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717F323293079007467BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45E717CF23293077007467BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E717DF23293077007467BB /* GPVideoEditor.xcdatamodeld in Sources */,
+				45E717D723293077007467BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717E623293079007467BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E717EF23293079007467BB /* GPVideoEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E717F123293079007467BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E717FA23293079007467BB /* GPVideoEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45E717EC23293079007467BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E717D223293077007467BB /* GPVideoEditor */;
+			targetProxy = 45E717EB23293079007467BB /* PBXContainerItemProxy */;
+		};
+		45E717F723293079007467BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E717D223293077007467BB /* GPVideoEditor */;
+			targetProxy = 45E717F623293079007467BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45E717DA23293077007467BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E717DB23293077007467BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45E717E223293078007467BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E717E323293078007467BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45E717FC23293079007467BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45E717FD23293079007467BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45E717FF23293079007467BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E7180023293079007467BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45E7180223293079007467BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPVideoEditor.app/GPVideoEditor";
+			};
+			name = Debug;
+		};
+		45E7180323293079007467BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPVideoEditor.app/GPVideoEditor";
+			};
+			name = Release;
+		};
+		45E7180523293079007467BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPVideoEditor;
+			};
+			name = Debug;
+		};
+		45E7180623293079007467BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = GPVideoEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.app.GPVideoEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPVideoEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E717CE23293077007467BB /* Build configuration list for PBXProject "GPVideoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E717FC23293079007467BB /* Debug */,
+				45E717FD23293079007467BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E717FE23293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E717FF23293079007467BB /* Debug */,
+				45E7180023293079007467BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E7180123293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E7180223293079007467BB /* Debug */,
+				45E7180323293079007467BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E7180423293079007467BB /* Build configuration list for PBXNativeTarget "GPVideoEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E7180523293079007467BB /* Debug */,
+				45E7180623293079007467BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45E717DD23293077007467BB /* GPVideoEditor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45E717DE23293077007467BB /* GPVideoEditor.xcdatamodel */,
+			);
+			currentVersion = 45E717DE23293077007467BB /* GPVideoEditor.xcdatamodel */;
+			path = GPVideoEditor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45E717CB23293077007467BB /* Project object */;
+}
