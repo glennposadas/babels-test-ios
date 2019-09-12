@@ -59,7 +59,8 @@ class AssetsViewController: GPViewController {
 extension AssetsViewController: AssetsDelegate {
     func assetsViewModel(_ viewModel: AssetsViewModel, loadedNewAssets assets: [PHAsset]) {
         // TODO: Perhaps use diff algorithm?
-        print("loadedNewAssets...")
-        self.collectionView.reloadData()
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }

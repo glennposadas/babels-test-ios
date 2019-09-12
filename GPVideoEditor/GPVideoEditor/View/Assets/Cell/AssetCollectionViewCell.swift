@@ -22,7 +22,7 @@ class AssetCollectionViewCell: GPCollectionViewCell {
     func setupCell(_ asset: PHAsset, isChecked: Bool) {
         self.imageView_Thumbnail.image = asset.thumbnail
         self.label_Duration.text = asset.durationRepresentable
-        self.imageView_Thumbnail.isHidden = !isChecked
+        self.imageView_Checkmark.isHidden = !isChecked
     }
     
     // MARK Overrides

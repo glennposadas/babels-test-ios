@@ -15,9 +15,12 @@ extension PHAsset {
         get {
             let manager = PHImageManager.default()
             let option = PHImageRequestOptions()
+            option.deliveryMode = .opportunistic
+            option.resizeMode = .exact
+            option.isNetworkAccessAllowed = true
+            
             var thumbnail = UIImage()
-            option.isSynchronous = true
-            manager.requestImage(for: self, targetSize: CGSize(width: 300, height: 300), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
+            manager.requestImage(for: self, targetSize: CGSize(width: 300.0, height: 300.0), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
                 thumbnail = result!
             })
             return thumbnail

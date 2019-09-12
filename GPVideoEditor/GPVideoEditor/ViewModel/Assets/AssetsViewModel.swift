@@ -29,7 +29,7 @@ class AssetsViewModel: BaseViewModel {
      - 0 for the PHAsset object.
      - .1 isChecked.
      */
-    private var assets = [PHAsset]()
+    private var datasource = [(PHAsset, Bool)]()
     
     typealias EmptyCallBack = (() -> (Void))
     
@@ -64,12 +64,14 @@ class AssetsViewModel: BaseViewModel {
             let fetchOptions = PHFetchOptions()
             fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate",ascending: false)]
             fetchOptions.predicate = NSPredicate(format: "mediaType = %d || mediaType = %d", PHAssetMediaType.image.rawValue, PHAssetMediaType.video.rawValue)
+
             let imagesAndVideos = PHAsset.fetchAssets(with: fetchOptions)
-            imagesAndVideos.enumerateObjects({ (asset, _, _) in
-                self.assets.append(asset)
+            imagesAndVideos.enumerateObjects({ (asset, index, _) in
+                print("index: \(index)")
+                self.datasource.append((asset, false))
             })
             self.delegate?.assetsViewModel(self, loadedNewAssets: [])
-            print("asset ocunt: \(self.assets.count)")
+            print("newAssets: \(self.datasource.count)")
         }
     }
     
@@ -86,11 +88,40 @@ class AssetsViewModel: BaseViewModel {
     }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension AssetsViewModel: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfColumns: CGFloat = 3.0
+        let screenWidth: CGFloat = UIScreen.main.bounds.width
+        let spacing: CGFloat = 2.0
+        return CGSize(width: (screenWidth / numberOfColumns) - spacing , height: 220.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 2.0
+    }
+}
+
 // MARK: - UICollectionViewDelegate
 
 extension AssetsViewModel: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = indexPath.item
+        let asset = self.datasource[item].0
+        self.datasource[item].1 = !self.datasource[item].1
         
+        if let cell = collectionView.cellForItem(at: indexPath) as? AssetCollectionViewCell {
+            cell.setupCell(asset, isChecked: self.datasource[item].1)
+        }
     }
 }
 
@@ -105,13 +136,14 @@ extension AssetsViewModel: UICollectionViewDataSource {
         if cell == nil { cell = AssetCollectionViewCell() }
         
         let item = indexPath.item
-        let asset = self.assets[item]
-        cell?.setupCell(asset, isChecked: false)
+        let asset = self.datasource[item].0
+        let isChecked = self.datasource[item].1
+        cell?.setupCell(asset, isChecked: isChecked)
         
         return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.assets.count
+        return self.datasource.count
     }
 }
