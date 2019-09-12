@@ -9,8 +9,15 @@
 import UIKit
 
 /**
+ The Base Delegate of all ViewModels.
+ */
+@objc protocol BaseViewModelDelegate: class {
+    /// Presents an alert/
+    @objc optional func presentAlert(title: String, message: String, okayButtonTitle: String, cancelButtonTitle: String?, withBlock completion: GPViewController.GPAlertCallBack?)
+}
+
+/**
  The base viewModel of all viewModels.
- TODO: Setup base protocol.
  */
 class BaseViewModel: NSObject {
 
