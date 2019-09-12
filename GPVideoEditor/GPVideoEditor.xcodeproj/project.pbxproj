@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		456CA17A2329F84B00587F55 /* GPSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA1792329F84B00587F55 /* GPSharedData.swift */; };
 		456CA17C2329FB6B00587F55 /* Bundle+GPVideoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA17B2329FB6B00587F55 /* Bundle+GPVideoEditor.swift */; };
+		456CA17E232A4D9200587F55 /* AssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA17D232A4D9200587F55 /* AssetCollectionViewCell.swift */; };
+		456CA182232A4DCB00587F55 /* GPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA181232A4DCB00587F55 /* GPCollectionViewCell.swift */; };
+		456CA184232A54F600587F55 /* PHAsset+GPVideoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA183232A54F600587F55 /* PHAsset+GPVideoEditor.swift */; };
 		45E717D723293077007467BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E717D623293077007467BB /* AppDelegate.swift */; };
 		45E717DC23293077007467BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E717DA23293077007467BB /* Main.storyboard */; };
 		45E717DF23293077007467BB /* GPVideoEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45E717DD23293077007467BB /* GPVideoEditor.xcdatamodeld */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		456CA1792329F84B00587F55 /* GPSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSharedData.swift; sourceTree = "<group>"; };
 		456CA17B2329FB6B00587F55 /* Bundle+GPVideoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+GPVideoEditor.swift"; sourceTree = "<group>"; };
+		456CA17D232A4D9200587F55 /* AssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCollectionViewCell.swift; sourceTree = "<group>"; };
+		456CA181232A4DCB00587F55 /* GPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCollectionViewCell.swift; sourceTree = "<group>"; };
+		456CA183232A54F600587F55 /* PHAsset+GPVideoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+GPVideoEditor.swift"; sourceTree = "<group>"; };
 		45E717D323293077007467BB /* GPVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E717D623293077007467BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E717DB23293077007467BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456CA17F232A4D9600587F55 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				456CA17D232A4D9200587F55 /* AssetCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		456CA180232A4DB800587F55 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				456CA181232A4DCB00587F55 /* GPCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		45E717CA23293077007467BB = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +198,9 @@
 		45E7180B23293864007467BB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				456CA1792329F84B00587F55 /* GPSharedData.swift */,
 				456CA17B2329FB6B00587F55 /* Bundle+GPVideoEditor.swift */,
+				456CA1792329F84B00587F55 /* GPSharedData.swift */,
+				456CA183232A54F600587F55 /* PHAsset+GPVideoEditor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -218,6 +241,7 @@
 		45E7181423293983007467BB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				456CA180232A4DB800587F55 /* Cell */,
 				45E718122329397F007467BB /* GPViewController.swift */,
 			);
 			path = Base;
@@ -226,6 +250,7 @@
 		45E718152329399C007467BB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				456CA17F232A4D9600587F55 /* Cell */,
 				45E7181023293959007467BB /* AssetsViewController.swift */,
 			);
 			path = Assets;
@@ -381,7 +406,10 @@
 				45E717DF23293077007467BB /* GPVideoEditor.xcdatamodeld in Sources */,
 				45E7181823293A60007467BB /* BaseViewModel.swift in Sources */,
 				45E717D723293077007467BB /* AppDelegate.swift in Sources */,
+				456CA184232A54F600587F55 /* PHAsset+GPVideoEditor.swift in Sources */,
+				456CA17E232A4D9200587F55 /* AssetCollectionViewCell.swift in Sources */,
 				45E7181B23293AD4007467BB /* AssetsViewModel.swift in Sources */,
+				456CA182232A4DCB00587F55 /* GPCollectionViewCell.swift in Sources */,
 				45E7181123293959007467BB /* AssetsViewController.swift in Sources */,
 				45E718132329397F007467BB /* GPViewController.swift in Sources */,
 				456CA17A2329F84B00587F55 /* GPSharedData.swift in Sources */,

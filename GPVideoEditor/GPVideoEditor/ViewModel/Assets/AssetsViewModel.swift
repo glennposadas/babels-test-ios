@@ -24,6 +24,11 @@ class AssetsViewModel: BaseViewModel {
     
     private weak var delegate: AssetsDelegate?
     
+    /**
+     A tuple as a datasource.
+     - 0 for the PHAsset object.
+     - .1 isChecked.
+     */
     private var assets = [PHAsset]()
     
     typealias EmptyCallBack = (() -> (Void))
@@ -62,9 +67,8 @@ class AssetsViewModel: BaseViewModel {
             let imagesAndVideos = PHAsset.fetchAssets(with: fetchOptions)
             imagesAndVideos.enumerateObjects({ (asset, _, _) in
                 self.assets.append(asset)
-                print("1111 asset ocunt: \(self.assets.count)")
             })
-            
+            self.delegate?.assetsViewModel(self, loadedNewAssets: [])
             print("asset ocunt: \(self.assets.count)")
         }
     }
@@ -79,5 +83,35 @@ class AssetsViewModel: BaseViewModel {
     /// It's best to relaod the local assets each time the screen appears.
     func viewWillAppear() {
         self.getAssets()
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension AssetsViewModel: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+}
+
+
+// MARK: - UICollectionViewDataSource
+
+extension AssetsViewModel: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var cell: AssetCollectionViewCell?
+        cell = collectionView.dequeueReusableCell(withReuseIdentifier: AssetCollectionViewCell.identifier, for: indexPath) as? AssetCollectionViewCell
+        
+        if cell == nil { cell = AssetCollectionViewCell() }
+        
+        let item = indexPath.item
+        let asset = self.assets[item]
+        cell?.setupCell(asset, isChecked: false)
+        
+        return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.assets.count
     }
 }

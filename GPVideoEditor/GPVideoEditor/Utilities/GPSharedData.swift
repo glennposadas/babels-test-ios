@@ -9,3 +9,7 @@
 import Foundation
 
 let appName = Bundle.main.displayName ?? "GPVideoEditor"
+
+struct GPSharedData {
+    
+}

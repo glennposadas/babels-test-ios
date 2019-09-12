@@ -52,6 +52,18 @@ class GPViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    // MARK: Navigation Bar Utilities
+    
+    /// Shows the navigation bar.
+    func showNavBar(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    /// Hides the navigation bar.
+    func hideNavBar(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     // MARK: Overrides
     
     override func viewDidLoad() {
